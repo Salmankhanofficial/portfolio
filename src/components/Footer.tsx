@@ -86,7 +86,7 @@ const Footer = () => {
     <div>
       <div className="bg-[#F8F8F8] py-7 sm:py-16 flex gap-5 sm:gap-10 flex-col items-center">
         <div className="flex">
-          <Image src={"/logo.jpg"} alt={"logo"} className="w-8 h-8" />
+          <Image src={"/Logo.jpg"} alt={"logo"} className="w-8 h-8" />
           <span className="font-bold text-nowrap text-lg md:text-xl lg:text-2xl">
             {" "}
             -Developer
