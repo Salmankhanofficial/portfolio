@@ -19,7 +19,7 @@ export default function Home() {
     <main
       className={` ${poppins.className} ${poppins.variable} ${inter.className}`}
     >
-        <div className="px-10 md:px-20 lg:px-24">
+        <div className="px-3 sm:px-10 md:px-20 lg:px-24">
         <Navbar />
         <div id="home">
           <IntroductionCard />

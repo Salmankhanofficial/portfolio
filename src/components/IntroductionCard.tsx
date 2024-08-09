@@ -33,7 +33,7 @@ const IntroductionCard = () => {
         <Image
           src={"/Group2.webp"}
           alt={"salman"}
-          className="lg:w-72 w-64 h-64 p-1 sm:w-60 sm:h-72 sm:absolute hover:bg-gray-400 sm:hover:bg-white border-[5px] sm:border-none  border-[#0c0501] rounded-full right-5 lg:right-32  sm:rounded-3xl top-[220px]"
+          className="lg:w-72 w-64 h-64 p-1 sm:w-60 sm:h-72 sm:absolute  border-[5px] sm:border-none  border-[#0c0501] rounded-full right-5 lg:right-32  sm:rounded-3xl top-[220px]"
         />
       </div>
     </div>

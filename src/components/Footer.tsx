@@ -66,6 +66,9 @@ declare module 'react-scroll';
 import React, { useState } from "react";
 import Image from "./Image";
 import { Link as ScrollLink } from "react-scroll";
+import { FaGithub } from "react-icons/fa";
+import Link from "next/link";
+import { IoLogoLinkedin } from "react-icons/io";
 
 const Footer = () => {
   const [activeLink, setActiveLink] = useState(null);
@@ -115,6 +118,14 @@ const Footer = () => {
           © 2024 <span className="text-[#FD6F00] font-bold">S-Developer</span>{" "}
           All Rights Reserved, Inc.
         </p>
+      </div>
+      <div className="w-full gap-5 pb-4 text-sm flex justify-center sm:text-base bg-[#545454] text-center text-white text-bold">
+        <a target="_blank" href={"https://github.com/Salmankhanofficial"} className="text-center text-3xl">
+        <FaGithub />
+        </a>
+        <a target="_blank" href={"https://www.linkedin.com/in/salman-khan-2bb65722a/"} className="text-center text-3xl">
+        <IoLogoLinkedin />
+        </a>
       </div>
     </div>
   );
