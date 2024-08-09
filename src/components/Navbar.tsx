@@ -33,7 +33,7 @@ const Navbar = () => {
       </div>
       <div className="hidden sm:block">
         <div className="flex">
-          <Image src={"/logo.jpg"} alt={"logo"} className="w-8 h-8" />
+          <Image src={"/Logo.jpg"} alt={"logo"} className="w-8 h-8" />
           <span className="font-bold text-nowrap text-lg md:text-xl lg:text-2xl">
             {" "}
             -Developer
