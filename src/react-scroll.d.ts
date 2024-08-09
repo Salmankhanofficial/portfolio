@@ -2,7 +2,7 @@ declare module 'react-scroll' {
   import { ReactNode, ComponentType } from 'react';
 
   interface LinkProps {
-    children?: ReactNode; // Add this line to support the children prop
+    children?: ReactNode;
     className?: string;
     to: string;
     spy?: boolean;
