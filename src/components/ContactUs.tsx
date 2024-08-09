@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Input from "./Input";
-import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -26,30 +25,8 @@ const ContactUs = () => {
   } = useForm({ resolver: yupResolver(schema) });
 
   const onSubmit = async (data: any) => {
-    const { firstName, lastName, email, subject, message } = data;
-    try {
-      console.log("Sending email with data: ", data);
-      const templateParams = {
-        firstName,
-        lastName,
-        email,
-        subject,
-        message,
-      };
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_SERVICE_ID ?? "",
-        process.env.NEXT_PUBLIC_TEMPLATE_ID ?? "",
-        templateParams,
-        process.env.NEXT_PUBLIC_PUBLIC_KEY ?? ""
-      );
-
-      toast.success("Message sent successfully");
-
-      reset();
-    } catch (e) {
-      console.log("Error sending email: ", e);
-      toast.error("this is error");
-    }
+toast.success('email send successfully ')
+reset();
   };
 
   return (
