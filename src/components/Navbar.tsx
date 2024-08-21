@@ -60,7 +60,7 @@ const Navbar = () => {
             ))}
           </ul>
           <a
-            href="/Salman_CV.pdf"
+            href="/salman_resume.pdf"
             download="CV.pdf"
             className="bg-[#ff6300] hover:bg-white border hover:border-[#ff6300] hover:text-black text-white py-2 px-3 md:px-5 text-sm md:text-base rounded-md font-Poppins text-nowrap"
           >
