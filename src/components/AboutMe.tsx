@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import Image from "./Image";
@@ -6,16 +6,20 @@ import SkillChart from "./ScallChart";
 
 const AboutMe = () => {
   const skillsData = [
-    { name: "React JS", percentage: 90 },
-    { name: "Next JS", percentage: 75 },
-    { name: "TypeScript", percentage: 90 },
-    { name: "GraphQL", percentage: 80 },
-    { name: "RestAPI", percentage: 85 },
-    { name: "Tailwind", percentage: 95 },
-    { name: "Bootstrap", percentage: 85 },
-    { name: "Git & GitHub", percentage: 95 },
-    { name: "Deployment", percentage: 80 },
-    { name: "Backend Knowledge", percentage: 30 },
+    { name: "React JS", percentage: 100 },
+    { name: "Next JS", percentage: 100 },
+    { name: "Node JS", percentage: 100 },
+    { name: "Postgress", percentage: 100 },
+    { name: "MongoDB", percentage: 100 },
+    { name: " Sequelize", percentage: 100 },
+    { name: "TypeScript", percentage: 100 },
+    { name: "GraphQL", percentage: 100},
+    { name: "RestAPI", percentage: 100 },
+    { name: "Tailwind", percentage: 100 },
+    { name: "Bootstrap", percentage: 100 },
+    { name: "Git & GitHub", percentage: 100 },
+    { name: "Deployment", percentage: 100 },
+
   ];
   const colors = ["#FF6300", "#FF6300", "#FF6300", "#FF6300", "#FF6300"];
 
@@ -33,14 +37,16 @@ const AboutMe = () => {
           About Me
         </h1>
         <p className="text-sm md:text-base">
-          I am a passionate Frontend Web Developer specializing in creating
-          responsive and user-friendly web applications. At Alimcosoft Pvt. Ltd.
-          in Islamabad, I leverage my expertise in Next.js, React.js, and
-          TypeScript to build modern, efficient, and scalable web solutions. I
-          have successfully delivered real-time projects that showcase my
-          ability to implement complex functionalities and seamless user
-          experiences. My professional work, I take on various freelancing
-          projects, collaborating with clients to bring their ideas to life.
+          As a Full Stack Engineer with over two years of hands-on experience in
+          developing scalable web applications, I am proficient in a diverse
+          tech stack, including Node.js, React.js, Next.js, TypeScript, GraphQL,
+          PostgreSQL, MongoDB, Sequelize, Git, GitHub, and more. I excel in both
+          front-end and back-end development, leveraging strong problem-solving
+          skills and a collaborative approach within cross-functional teams. I
+          am passionate about staying current with emerging technologies to
+          enhance project efficiency and am committed to continuous learning. I
+          am eager to contribute to innovative solutions in the ever-evolving
+          field of web development.
         </p>
         <SkillChart title="Skills" skills={skillsData} colors={colors} />
       </div>
@@ -49,4 +55,3 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
-

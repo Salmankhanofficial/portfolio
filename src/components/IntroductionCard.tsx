@@ -10,17 +10,17 @@ const IntroductionCard = () => {
         <h2 className="font-semibold text-[rgb(255,99,0)] text-3xl font-Poppins">
           Salman Khan
         </h2>
-        <p className="font-bold text-3xl lg:text-4xl">Front-End</p>
+        <p className="font-bold text-3xl lg:text-4xl">Full Stack</p>
         <p className="font-bold text-3xl lg:text-4xl pl-20 sm:pl-32">
           Developer
         </p>
         <p className="mt-2 lg:mt-0">
-          With over 1.5 years of experience, I specialize in building responsive
-          and user-friendly web applications. I am passionate about delivering
-          high-quality, seamless user experiences and have a strong command of
-          modern frontend technologies. My projects demonstrate a blend of
-          creativity and technical expertise, reflecting my commitment to
-          excellence in web development.
+          With over two years of experience, I specialize in building responsive
+          and user-friendly full-stack web applications. I am passionate about
+          delivering high-quality, seamless user experiences and have a strong
+          command of both modern frontend and backend technologies. My projects
+          demonstrate a blend of creativity and technical expertise, reflecting
+          my commitment to excellence in full-stack web development.
         </p>
         <a
           href="mailto:salmanpak09@gmail.com"

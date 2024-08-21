@@ -17,9 +17,11 @@ const poppins = Poppins({
 export default function Home() {
   return (
     <main
-      className={` ${poppins.className} ${poppins.variable} ${inter.className}`}
+    id=""
+      className={`  ${poppins.className} ${poppins.variable} ${inter.className}`}
     >
-        <div className="px-3 sm:px-10 md:px-20 lg:px-24">
+        <div 
+        className="px-3 sm:px-10 md:px-20 lg:px-24 scroll-1">
         <Navbar />
         <div id="home">
           <IntroductionCard />

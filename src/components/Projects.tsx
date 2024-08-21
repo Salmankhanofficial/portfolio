@@ -68,12 +68,13 @@ const Projects = () => {
             My Projects
           </h1>
           <p className="text-sm md:text-base text-center my-5">
-            Here are my projects developed during my 1.5-year journey as a
-            frontend developer. I focused on creating responsive, user-friendly
-            websites for both a software house and freelance clients. My work
-            involved optimizing performance, ensuring cross-browser
-            compatibility, and delivering high-quality web solutions that met
-            client requirements.
+            Here are the projects I've developed during my more than two-year
+            journey as a Full Stack Developer. I concentrated on building
+            responsive, user-friendly web applications for both software houses
+            and diverse clients. My work as a Full Stack Developer involved
+            optimizing performance, ensuring cross-browser compatibility, and
+            delivering high-quality web solutions that consistently met or
+            exceeded client requirements.
           </p>
         </div>
         <div className="gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-7">
@@ -94,7 +95,7 @@ const Projects = () => {
       <Modal
         show={showModal}
         onClose={() => setShowModal(false)}
-        containerClass="bg-gray-200 w-[70%] mx-auto rounded-lg overflow-y-scroll h-full px-5 py-5"
+        containerClass="bg-gray-200 w-11/12 sm:w-[70%] mx-auto rounded-lg overflow-y-scroll h-full px-5 py-5 "
       >
         <div className="text-base py-4 font-Poppins">{currentTitle}</div>
         {currentlink && (

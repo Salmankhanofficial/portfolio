@@ -25,8 +25,8 @@ function Modal({ show, onClose, containerClass, className, children }: Props) {
       />
       {/* Modal content */}
       <div
-        className={`z-10 shadow-light absolute w-1/2 ${containerClass}`}
-        id="scroll-2"
+        className={`z-10 shadow-light absolute w-1/2  ${containerClass}`}
+        id="scroll-right"
       >
         {show ? children : null}
       </div>

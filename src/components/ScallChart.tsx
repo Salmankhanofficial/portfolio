@@ -39,7 +39,7 @@ const SkillChart: React.FC<SkillChartProps> = ({ title, skills, colors }) => {
               }}
             >
               <span className="pb-2 text-nowrap">{skill.name} </span>
-              <span style={{ position: "relative" }}>{skill.percentage}%</span>
+              {/* <span style={{ position: "relative" }}>{skill.percentage}</span> */}
             </div>
             <div className="bg-[#EDECEC] rounded-r-xl">
               <div
