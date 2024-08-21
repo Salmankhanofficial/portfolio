@@ -68,7 +68,7 @@ const Projects = () => {
             My Projects
           </h1>
           <p className="text-sm md:text-base text-center my-5">
-            Here are the projects I've developed during my more than two-year
+            Here are the projects I have developed during my more than two-year
             journey as a Full Stack Developer. I concentrated on building
             responsive, user-friendly web applications for both software houses
             and diverse clients. My work as a Full Stack Developer involved

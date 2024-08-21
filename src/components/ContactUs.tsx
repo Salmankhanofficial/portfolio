@@ -213,7 +213,7 @@ const ContactUs = () => {
 
         <p className="text-sm md:text-base text-center">
           Get in touch with us for any inquiries or feedback. Fill out the form,
-          and I'll respond as soon as possible
+          and i will respond as soon as possible
         </p>
       </div>
       <div className="flex flex-wrap sm:flex-nowrap w-full justify-center gap-4 mt-6">
