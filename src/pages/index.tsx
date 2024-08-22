@@ -17,11 +17,10 @@ const poppins = Poppins({
 export default function Home() {
   return (
     <main
-    id=""
+      id=""
       className={`  ${poppins.className} ${poppins.variable} ${inter.className}`}
     >
-        <div 
-        className="px-3 sm:px-10 md:px-20 lg:px-24 scroll-1">
+      <div className="px-3 sm:px-10 md:px-20 lg:px-24 scroll-1">
         <Navbar />
         <div id="home">
           <IntroductionCard />
@@ -29,7 +28,7 @@ export default function Home() {
         <div id="about">
           <AboutMe />
         </div>
-        <div id="skills">
+        <div id="services">
           <Services />
         </div>
         <div id="projects">

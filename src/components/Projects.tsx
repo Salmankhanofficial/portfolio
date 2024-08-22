@@ -3,12 +3,14 @@ import React, { useState } from "react";
 import ProjectsCard from "./ProjectsCard";
 import Modal from "./Modal";
 import Image from "./Image";
+import { ImCross } from "react-icons/im";
 
 const Projects = () => {
   const [showModal, setShowModal] = useState(false);
-  const [currentImage, setCurrentImage] = useState("");
   const [currentTitle, setTitle] = useState("");
+  const [currentDescription, setDescription] = useState("");
   const [currentlink, setlink] = useState("");
+  const [currentImage, setCurrentImage] = useState("");
 
   const data = [
     {
@@ -53,10 +55,16 @@ const Projects = () => {
     },
   ];
 
-  const handleCardClick = (icon: any, description: any, link: any) => {
-    setCurrentImage(icon);
-    setTitle(description);
+  const handleCardClick = (
+    title: any,
+    description: any,
+    link: any,
+    icon: any
+  ) => {
+    setTitle(title);
+    setDescription(description);
     setlink(link);
+    setCurrentImage(icon);
     setShowModal(true);
   };
 
@@ -86,7 +94,12 @@ const Projects = () => {
               title={item?.title}
               description={item?.description}
               onClick={() =>
-                handleCardClick(item?.icon, item?.description, item?.link)
+                handleCardClick(
+                  item?.title,
+                  item?.description,
+                  item?.link,
+                  item?.icon
+                )
               }
             />
           ))}
@@ -97,7 +110,13 @@ const Projects = () => {
         onClose={() => setShowModal(false)}
         containerClass="bg-gray-200 w-11/12 sm:w-[70%] mx-auto rounded-lg overflow-y-scroll h-full px-5 py-5 "
       >
-        <div className="text-base py-4 font-Poppins">{currentTitle}</div>
+        <div className=" text-xl flex justify-end pb-2">
+          <ImCross className="cursor-pointer" onClick={() => setShowModal(false)} />
+        </div>
+        <div className="text-xl font-bold pt-2 font-Poppins">
+          {currentTitle}
+        </div>
+        <div className="text-base py-4 font-Poppins">{currentDescription}</div>
         {currentlink && (
           <a
             href={currentlink}
